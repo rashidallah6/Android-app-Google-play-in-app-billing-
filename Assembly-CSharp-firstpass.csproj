@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{14B34935-DD16-F72F-E514-8EE100499B75}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/5.6.3f1/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/5.6.3f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\AdColony.cs" />
+     <Compile Include="Assets\Plugins\Android\NoodlePermissionGranter\NoodlePermissionGranter.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\Attributes\RangedTooltipAttribute.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\Attributes\TooltipAttribute.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\Field.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\Fields.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\GAIHandler.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\GoogleAnalyticsAndroidV3.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\GoogleAnalyticsMPV3.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\GoogleAnalyticsV3.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\GoogleAnalyticsiOSV3.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\HitBuilders\AppViewHitBuilder.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\HitBuilders\EventHitBuilder.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\HitBuilders\ExceptionHitBuilder.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\HitBuilders\HitBuilder.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\HitBuilders\ItemHitBuilder.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\HitBuilders\SocialHitBuilder.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\HitBuilders\TimingHitBuilder.cs" />
+     <Compile Include="Assets\Plugins\GoogleAnalyticsV3\HitBuilders\TransactionHitBuilder.cs" />
+     <Compile Include="Assets\Plugins\LeanAudio.cs" />
+     <Compile Include="Assets\Plugins\LeanTest.cs" />
+     <Compile Include="Assets\Plugins\LeanTween.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\Android\OpenIAB_Android.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\IOpenIAB.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\Inventory.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\JSON.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\OpenIAB.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\OpenIABEventManager.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\Options.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\OptionsVerifyMode.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\Purchase.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\SearchStrategy.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\SkuDetails.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\WP8\OpenIAB_WP8.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\iOS\OpenIAB_iOS.cs" />
+     <Compile Include="Assets\Plugins\SimpleJSON.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Core\SocialPlatfromSettings.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Enum\FB_AppRequestState.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Enum\FB_Gender.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Enum\FB_HttpMethod.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Enum\FB_PermissionStatus.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Enum\FB_RequestActionType.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Enum\FacebookEvents.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Interfaces\SP_FB_API.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Manage\SPFacebook.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Manage\SPFacebookAnalytics.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Manage\SP_FB_API_v6.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Manage\SP_FB_API_v7.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Models\FB_AppRequest.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Models\FB_AppRequestResult.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Models\FB_LikeInfo.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Models\FB_Object.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Models\FB_Permission.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Models\FB_PermissionResult.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Models\FB_ProfileImageSize.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Models\FB_Score.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Models\FB_UserInfo.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Results\FB_LoginResult.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Results\FB_PostResult.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Results\FB_Result.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Tasks\FB_GrapRequest_V6.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Tasks\FB_GrapRequest_V7.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Tasks\FB_LikesRetrieveTask.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Facebook\Tasks\FB_PostingTask.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Instagram\Enum\InstagramEvents.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Instagram\Enum\InstagramPostResult.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Instagram\Manage\AndroidInstagramManager.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Models\AsyncTask.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Manage\AndroidTwitterManager.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Manage\TwitterApplicationOnlyToken.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Manage\TwitterDataCash.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Manage\TwitterManagerInterface.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Models\TWResult.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Models\TW_APIRequstResult.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Models\TweetTemplate.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Models\TwitterEvents.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Models\TwitterStatus.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Models\TwitterUserInfo.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Tasks\TWAPITest.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Tasks\TW_APIRequest.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Tasks\TW_FollowersIdsRequest.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Tasks\TW_FriendsIdsRequest.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Tasks\TW_OAuthAPIRequest.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Tasks\TW_SearchTweetsRequest.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Tasks\TW_UserTimeLineRequest.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Tasks\TW_UsersLookUpRequest.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\Social\Twitter\Tasks\TwitterPostingTask.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\System\APIBridge\AN_FBProxy.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\System\APIBridge\AN_ProxyPool.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\System\APIBridge\AN_SocialSharingProxy.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\System\APIBridge\AndroidNative.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\Scripts\System\Util\ANMiniJSON.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\SA_UI_Scripts\DefaultPreviewButton.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\SA_UI_Scripts\SALevelLoader.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\SA_UI_Scripts\SALoadedSceneOnClick.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\SA_UI_Scripts\SAOnClickAction.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\SA_UI_Scripts\SAOpenUrlOnClick.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\SA_UI_Scripts\SASendMessageOnClick.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\SA_UI_Scripts\SA_BackButton.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\SA_UI_Scripts\SA_Label.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\SA_UI_Scripts\SA_StatusBar.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\SA_UI_Scripts\SA_Texture.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\ScreenPlacementExtension\PreviewScreenUtil.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\ScreenPlacementExtension\ScreenPlacement.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\ScreenPlacementExtension\ScreenPlacementExtension.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\ScreenPlacementExtension\ScreenScaler.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\AndroidNative\xExample\PreviewUI\Scripts\ScreenPlacementExtension\XScaleModifayer.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\ManifestManager\AMM_Manager.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\ManifestManager\Core\AMM_Settings.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\ManifestManager\Models\AMM_ActivityTemplate.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\ManifestManager\Models\AMM_ApplicationTemplate.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\ManifestManager\Models\AMM_BaseTemplate.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\ManifestManager\Models\AMM_ManifestPermission.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\ManifestManager\Models\AMM_PropertyTemplate.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\ManifestManager\Models\AMM_Template.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\MobileSocialPlugin\Scripts\Android\NativeSharing\MSPAndroidSocialGate.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\MobileSocialPlugin\Scripts\Core\SPInstagram.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\MobileSocialPlugin\Scripts\Core\SPShareUtility.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\MobileSocialPlugin\Scripts\Core\SPTwitter.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\MobileSocialPlugin\Scripts\IOS\Instagram\IOSInstagramManager.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\MobileSocialPlugin\Scripts\IOS\NativeSharing\MSPIOSSocialManager.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\MobileSocialPlugin\Scripts\IOS\Twitter\IOSTwitterManager.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\MobileSocialPlugin\Scripts\Tasks\FacebookPostScreenshotTask.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\MobileSocialPlugin\Scripts\Tasks\InstagramPostScreenshotTask.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Modules\MobileSocialPlugin\Scripts\Tasks\TwitterPostScreenshotTask.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Data\SA_Converter.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Data\SA_MiniJSON.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Effetcs\Animations\Tween\Enums\SA_EaseType.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Effetcs\Animations\Tween\Methods\SA_ValuesTween.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Effetcs\Animations\Tween\Pixelplacement\iTween\SA_iTween.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Models\SA_Error.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Models\SA_Invoker.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Models\SA_PrefabAsyncLoader.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Models\SA_Result.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Models\SA_ScreenshotMaker.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Models\SA_WWWTextureLoader.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Modules\SA_Config.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Utilities\Extensions\SA_GameObjectExtensions.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Utilities\Extensions\SA_TextureExtensions.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Utilities\Modules\SA_Files.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Utilities\Modules\SA_GeneralUtility.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Utilities\Modules\SA_IdFactory.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Utilities\Modules\SA_Loader.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Utilities\Modules\SA_Screen.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Utilities\Patterns\SA_NonMonoSingleton.cs" />
+     <Compile Include="Assets\Plugins\StansAssetsss\Support\Common\Utilities\Patterns\SA_Singleton.cs" />
+     <Compile Include="Assets\Plugins\Vungle\AdFinishedEventArgs.cs" />
+     <Compile Include="Assets\Plugins\Vungle\Android\VungleAndroid.cs" />
+     <Compile Include="Assets\Plugins\Vungle\MiniJSONV.cs" />
+     <Compile Include="Assets\Plugins\Vungle\Vungle.cs" />
+     <Compile Include="Assets\Plugins\Vungle\VungleManager.cs" />
+     <Compile Include="Assets\Plugins\Vungle\VungleSceneLoom.cs" />
+     <Compile Include="Assets\Plugins\Vungle\iOS\VungleBinding.cs" />
+     <Compile Include="Assets\Plugins\Vungle\win\VungleWin.cs" />
+     <Compile Include="Assets\Plugins\iTween.cs" />
+     <None Include="Assets\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />
+     <None Include="Assets\Graphics\GamePlay\Characters\dog\dog.atlas.txt" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\social\an_social.txt" />
+     <None Include="Assets\Graphics\GamePlay\boosters\xeng\xeng.atlas.txt" />
+     <None Include="Assets\spine-unity\Shaders\HiddenPass.shader" />
+     <None Include="Assets\Graphics\GamePlay\FX\FX_littlestar\sao2.atlas.txt" />
+     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver.txt" />
+     <None Include="Assets\Editor Default Resources\FontSetter\Textured Text Shader.shader" />
+     <None Include="Assets\spine-unity\Modules\Shaders\Sprite\SpriteVertexLighting.cginc" />
+     <None Include="Assets\spine-unity\Modules\Shaders\Sprite\SpriteShadows.cginc" />
+     <None Include="Assets\Graphics\GamePlay\Characters\duck\duck.atlas.txt" />
+     <None Include="Assets\Plugins\Android\NoodlePermissionGranter\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\AN_Res\res\values\analytics.xml" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\androidnative.txt" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\IOS\ISN_SocialGate.mm.txt" />
+     <None Include="Assets\spine-unity\Modules\Shaders\Sprite\SpritePixelLighting.cginc" />
+     <None Include="Assets\spine-unity\Modules\Shaders\Sprite\SpriteLighting.cginc" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\social\an_social.jar.txt" />
+     <None Include="Assets\Graphics\GamePlay\FX\FX_Sugar 1\banh.atlas.txt" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\IOS\ISN_NativeCore.h.txt" />
+     <None Include="Assets\Graphics\GamePlay\FX\FX_littlestar\sao6.atlas.txt" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\libs\android-support-v4.txt" />
+     <None Include="Assets\Plugins\StansAssets\Support\Versions\MSP_VersionInfo.txt" />
+     <None Include="Assets\Graphics\GamePlay\Characters\penguin\skeleton.atlas.txt" />
+     <None Include="Assets\Graphics\GamePlay\FX\FX_littlestar\sao5.atlas.txt" />
+     <None Include="Assets\spine-unity\Modules\Shaders\Sprite\ShaderShared.cginc" />
+     <None Include="Assets\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.txt" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\libs\image-chooser-library-1.6.0.txt" />
+     <None Include="Assets\Graphics\GamePlay\Characters\litter_girl\Littlegirl.atlas.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Graphics\GamePlay\FX\thach no\skeleton.atlas.txt" />
+     <None Include="Assets\Plugins\StansAssetsss\Modules\ManifestManager\default.xml" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\libs\support-v4-23.4.0.txt" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\androidnative.jar.txt" />
+     <None Include="Assets\Graphics\GamePlay\FX\FX_littlestar\sao7.atlas.txt" />
+     <None Include="Assets\Plugins\Android\OneSignalConfig\AndroidManifestTemplate.xml" />
+     <None Include="Assets\spine-unity\Modules\Shaders\Sprite\SpriteUnlit.cginc" />
+     <None Include="Assets\Fonts\Textured Text Shader.shader" />
+     <None Include="Assets\Graphics\GamePlay\FX\FX_littlestar\sao3.atlas.txt" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\AndroidManifest.txt" />
+     <None Include="Assets\spine-unity\Modules\Shaders\Sprite\SpritesPixelLit.shader" />
+     <None Include="Assets\Plugins\Android\OneSignalConfig\README.txt" />
+     <None Include="Assets\Graphics\GamePlay\Characters\cow\skeleton.atlas.txt" />
+     <None Include="Assets\Graphics\GamePlay\Characters\soc\soc.atlas.txt" />
+     <None Include="Assets\spine-unity\Modules\Shaders\SkeletonTint.shader" />
+     <None Include="Assets\Graphics\GamePlay\FX\FX_win star\Effect.atlas.txt" />
+     <None Include="Assets\spine-unity\Modules\Shaders\Sprite\SpritesUnlit.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest3.xml" />
+     <None Include="Assets\spine-unity\Shaders\Bones.shader" />
+     <None Include="Assets\Plugins\Android\Vungle_lib\AndroidManifest.xml" />
+     <None Include="Assets\Graphics\GamePlay\FX\FX_littlestar\sao4.atlas.txt" />
+     <None Include="Assets\spine-unity\Modules\Shaders\Sprite\SpritesVertexLit.shader" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\AN_Res\AndroidManifest.txt" />
+     <None Include="Assets\spine-unity\Modules\Ghost\Shaders\SkeletonGhost.shader" />
+     <None Include="Assets\Graphics\GamePlay\Characters\penguin\penguin.atlas.txt" />
+     <None Include="Assets\PlayServicesResolver\proguard-unity.txt" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\social\twitter4j-core-4.0.4.txt" />
+     <None Include="Assets\Graphics\GamePlay\FX\FX_lock\lock.atlas.txt" />
+     <None Include="Assets\Graphics\GamePlay\FX\FX_littlestar\sao8.atlas.txt" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\libs\an_sa_soomla.txt" />
+     <None Include="Assets\Plugins\Android\GoogleMobileAdsPlugin\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\OneSignalConfig\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\IOS\ISN_NativeCore.mm.txt" />
+     <None Include="Assets\Graphics\GamePlay\Characters\rabbit\rabbit.atlas.txt" />
+     <None Include="Assets\spine-unity\Modules\SkeletonGraphic\Shaders\SkeletonGraphic.shader" />
+     <None Include="Assets\spine-unity\Shaders\Skeleton.shader" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\AndroidManifest.xml" />
+     <None Include="Assets\Graphics\GamePlay\boosters\keo\keo.atlas.txt" />
+     <None Include="Assets\PlayServicesResolver\proguard-messaging-workaround.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest1.xml" />
+     <None Include="Assets\Graphics\GamePlay\FX\FX_Sugar1\banh.atlas.txt" />
+     <None Include="Assets\Graphics\GamePlay\FX\FX_littlestar\sao.atlas.txt" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\AN_Res\res\values\version.xml" />
+     <None Include="Assets\Graphics\GamePlay\FX\FX_fountains\la\green.atlas.txt" />
+     <None Include="Assets\Graphics\GamePlay\boosters\bua\bua.atlas.txt" />
+     <None Include="Assets\Text.shader" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\AN_Res\res\xml\file_paths.xml" />
+     <None Include="Assets\Plugins\StansAssetsss\Support\NativeLibraries\Android\AN_Res\res\values\ids.xml" />
+     <None Include="Assets\AudienceNetwork\Audience Network README.txt" />
+     <None Include="Assets\Graphics\GamePlay\Characters\mouse\mouse.atlas.txt" />
+     <None Include="Assets\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.txt" />
+     <None Include="Assets\Graphics\GamePlay\Characters\boss\boss.atlas.txt" />
+     <None Include="Assets\AudienceNetwork\Editor\Android\DefaultAndroidManifest.xml" />
+     <None Include="Assets\spine-unity\Modules\Shaders\Sprite\SpriteDepthNormalsTexture.shader" />
+     <None Include="Assets\Graphics\GamePlay\Characters\cow\cow.atlas.txt" />
+     <None Include="Assets\spine-unity\Shaders\SkeletonLit.shader" />
+     <None Include="Assets\Graphics\GamePlay\FX\FX_littlestar\sao9.atlas.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/5.6.3f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/5.6.3f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/5.6.3f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/5.6.3f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/5.6.3f1/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/5.6.3f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Unity/5.6.3f1/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="Facebook.Unity">
+ <HintPath>D:/GAMES/CANDY CRUSHING JUICE JAM 2/Candy Crushing Juice Jam - Match 3 Puzzle/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
+ </Reference>
+ <Reference Include="Facebook.Unity.IOS">
+ <HintPath>D:/GAMES/CANDY CRUSHING JUICE JAM 2/Candy Crushing Juice Jam - Match 3 Puzzle/Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll</HintPath>
+ </Reference>
+ <Reference Include="OneSignalSDK_WP_WNS">
+ <HintPath>D:/GAMES/CANDY CRUSHING JUICE JAM 2/Candy Crushing Juice Jam - Match 3 Puzzle/Assets/OneSignal/Platforms/OneSignalSDK_WP_WNS.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>D:/GAMES/CANDY CRUSHING JUICE JAM 2/Candy Crushing Juice Jam - Match 3 Puzzle/Assets/Plugins/ICSharpCode.SharpZipLib.dll</HintPath>
+ </Reference>
+ <Reference Include="OpenIAB_W8Plugin">
+ <HintPath>D:/GAMES/CANDY CRUSHING JUICE JAM 2/Candy Crushing Juice Jam - Match 3 Puzzle/Assets/Plugins/OpenIAB_W8Plugin.dll</HintPath>
+ </Reference>
+ <Reference Include="VungleSDKProxy">
+ <HintPath>D:/GAMES/CANDY CRUSHING JUICE JAM 2/Candy Crushing Juice Jam - Match 3 Puzzle/Assets/Plugins/VungleSDKProxy.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements.Editor">
+ <HintPath>D:/GAMES/CANDY CRUSHING JUICE JAM 2/Candy Crushing Juice Jam - Match 3 Puzzle/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
